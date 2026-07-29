@@ -1,16 +1,28 @@
 .hero {
   text-align: center;
-  padding: 80px 0;
+  padding: 140px 24px 100px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.hero h1 {
-  margin-bottom: 8px;
-}
-
-.hero p {
-  font-size: 20px;
-  color: var(--text);
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-2);
+  font-size: 13px;
+  font-weight: 600;
   margin-bottom: 24px;
+}
+
+.hero p.subtitle {
+  font-size: 19px;
+  color: var(--text);
+  margin-bottom: 36px;
 }
 
 .hero-cta {
@@ -18,20 +30,8 @@
   gap: 16px;
 }
 
-.hero-cta a {
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.hero-cta .primary {
-  background: var(--accent);
-  color: white;
-}
-
-.hero-cta .secondary {
-  border: 1px solid var(--border);
-  color: var(--text-h);
+@media (max-width: 640px) {
+  .hero {
+    padding: 90px 20px 60px;
+  }
 }
