@@ -3,9 +3,9 @@ import './About.css'
 
 const timeline = [
   {
-    year: '2024 - Presente',
+    year: '2026 - Presente',
     title: 'Desarrollador Full Stack',
-    place: 'Nombre de la empresa',
+    place: 'New project',
     description: 'Descripción breve de tus responsabilidades y logros.',
   },
   {
