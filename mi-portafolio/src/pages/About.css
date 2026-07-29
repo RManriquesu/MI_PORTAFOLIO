@@ -1,0 +1,76 @@
+.about-section {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-intro {
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+
+.timeline-heading {
+  margin-bottom: 24px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-left: 2px solid var(--border);
+  padding-left: 24px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline-year {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.timeline-item h4 {
+  margin: 4px 0 2px;
+  color: var(--text-h);
+  font-size: 17px;
+}
+
+.timeline-place {
+  font-size: 14px;
+  color: var(--text);
+  font-style: italic;
+}
+
+.timeline-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}

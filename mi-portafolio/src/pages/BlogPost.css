@@ -1,0 +1,16 @@
+.blog-post {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.blog-post-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.blog-post-content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}

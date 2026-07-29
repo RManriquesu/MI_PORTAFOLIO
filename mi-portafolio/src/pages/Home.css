@@ -1,0 +1,37 @@
+.hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.hero-cta {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.hero-cta a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.hero-cta .primary {
+  background: var(--accent);
+  color: white;
+}
+
+.hero-cta .secondary {
+  border: 1px solid var(--border);
+  color: var(--text-h);
+}

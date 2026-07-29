@@ -1,0 +1,13 @@
+.skills-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.skills-group h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: var(--text-h);
+}
