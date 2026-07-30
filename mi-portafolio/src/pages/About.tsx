@@ -5,14 +5,14 @@ const timeline = [
   {
     year: '2026 - Presente',
     title: 'Desarrollador Full Stack',
-    place: 'New project',
-    description: 'Descripción breve de tus responsabilidades y logros.',
+    place: 'Universidad Nacional de San Agustin de Arequipa',
+    description: 'Actualmente, siendo un estudiante de Ingenieria de Sistemas e Informatica',
   },
   {
-    year: '2022 - 2024',
-    title: 'Estudios en Desarrollo de Software',
-    place: 'Nombre de la institución',
-    description: 'Lo que aprendiste, proyectos destacados, etc.',
+    year: '2017 - 2021',
+    title: 'Estudios Secundarios',
+    place: 'I.E sEBASTIAN BARRANCA',
+    description: 'Se aprendio lo basico para poder desempeñarse en mis estudios superiores',
   },
   {
     year: '2021',
