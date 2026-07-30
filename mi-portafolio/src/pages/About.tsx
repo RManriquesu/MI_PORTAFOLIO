@@ -3,7 +3,7 @@ import './About.css'
 
 const timeline = [
   {
-    year: '2026 - Presente',
+    year: '2025 - Presente',
     title: 'Desarrollador Full Stack',
     place: 'Universidad Nacional de San Agustin de Arequipa',
     description: 'Actualmente, siendo un estudiante de Ingenieria de Sistemas e Informatica',
@@ -11,14 +11,14 @@ const timeline = [
   {
     year: '2017 - 2021',
     title: 'Estudios Secundarios',
-    place: 'I.E sEBASTIAN BARRANCA',
+    place: 'I.E SEBASTIAN BARRANCA',
     description: 'Se aprendio lo basico para poder desempeñarse en mis estudios superiores',
   },
   {
-    year: '2021',
-    title: 'Primer proyecto / trabajo',
-    place: 'Nombre de la empresa o proyecto',
-    description: 'Breve descripción.',
+    year: '2005 - 2016',
+    title: 'Teniendo la vida de un inocente niño ',
+    place: 'Mi ciudad natal: Camaná',
+    description: 'La vida de un niño como ya todo el mundo sabe, es completamente deiferente en cada uno...',
   },
 ]
 
