@@ -27,8 +27,9 @@ export default function About() {
     <section className="about-section">
       <h2>Sobre mí</h2>
       <p className="about-intro">
-        Aquí va tu párrafo de presentación: quién eres, qué te apasiona del desarrollo,
-        qué tipo de proyectos te gusta construir, y qué te hace diferente.
+        ¡Hola! Soy Ronald Manrique, desarrollador Full Stack y estudiante de Ingeniería de Sistemas e Informática en la Universidad Nacional de San Agustín de Arequipa.
+
+         Me apasiona transformar ideas complejas en productos digitales ágiles, escalables y visualmente atractivos. Mi enfoque combina la lógica del backend con experiencias de usuario fluidas en el frontend, utilizando tecnologías modernas como React, TypeScript y Supabase. Orgullosamente originario de Camaná, busco constantemente nuevos retos tecnológicos que me permitan seguir aprendiendo, creando software de alto impacto y aportando soluciones reales.
       </p>
 
       <a href="/cv.pdf" download className="cv-download">
