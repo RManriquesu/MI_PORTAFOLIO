@@ -254,3 +254,88 @@
 .login-btn:active {
   transform: scale(0.98);
 }
+
+/* ==========================================
+   MEJORAS VISUALES PARA EL LOGIN (CON OJO Y SPINNER)
+   ========================================== */
+
+/* Subtítulo y Badge */
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.admin-badge {
+  background-color: rgba(37, 99, 235, 0.15);
+  color: #60a5fa;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.login-subtitle {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Wrapper de Input para posicionar el botón del Ojo */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  padding-right: 42px !important; /* Espacio para que el texto no pise el ojo */
+}
+
+/* Botón del Ojo dentro del Input */
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.toggle-password-btn:hover {
+  color: #f8fafc;
+}
+
+/* Spinner de Carga animado */
+.btn-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Estado del botón deshabilitado */
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
