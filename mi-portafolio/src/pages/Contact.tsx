@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
 import './Contact.css'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { Mail } from 'lucide-react'
 
 export default function Contact() {
@@ -68,9 +68,18 @@ export default function Contact() {
         </button>
       </form>
       <div className="social-links">
-  <a href="https://github.com/RManriquesu" target="_blank" rel="noreferrer"><FaGithub size={20} /></a>
-  <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noreferrer"><FaLinkedin size={20} /></a>
-  <a href="ronaldms376@gmail.com"><Mail size={20} /></a>
+        <a href="https://github.com/RManriquesu" target="_blank" rel="noreferrer">
+          <FaGithub size={20} />
+        </a>
+        <a href="https://www.linkedin.com/in/ronald-wilmer-manrique-supanta-597521426" target="_blank" rel="noreferrer">
+          <FaLinkedin size={20} />
+        </a>
+        <a href="https://instagram.com/tu_usuario" target="_blank" rel="noreferrer">
+          <FaInstagram size={20} />
+        </a>
+        <a href="mailto:ronaldms376@gmail.com">
+          <Mail size={20} />
+        </a>
       </div>
     </section>
   )

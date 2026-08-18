@@ -1,8 +1,28 @@
+/* --- ESTILOS PARA EL ENCABEZADO --- */
 .admin-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* --- BOTÓN PRINCIPAL (+ Nuevo proyecto) --- */
+.admin-header button {
+  background-color: #2563eb; /* Azul primario para destacar */
+  color: #ffffff;
+  border: 1px solid #3b82f6;
+  padding: 8px 16px;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.admin-header button:hover {
+  background-color: #1d4ed8;
+  border-color: #2563eb;
 }
 
 .admin-form {
@@ -47,20 +67,42 @@
   font-size: 14px;
 }
 
-.admin-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
+/* --- BASE PARA BOTONES DE LA TABLA (Editar y Eliminar) --- */
+.admin-table td button {
+  padding: 6px 12px;
+  font-size: 0.8125rem; /* 13px para la tabla */
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
 }
 
-.admin-table th,
-.admin-table td {
-  padding: 10px;
-  border-bottom: 1px solid var(--border);
-}
-
-.admin-table button {
+/* --- BOTÓN "EDITAR" (Primer botón de la celda) --- */
+.admin-table td button:first-child {
+  background-color: #1e293b; /* Azul oscuro grisáceo */
+  color: #e2e8f0;
+  border: 1px solid #334155;
   margin-right: 8px;
+}
+
+.admin-table td button:first-child:hover {
+  background-color: #334155;
+  color: #ffffff;
+  border-color: #475569;
+}
+
+/* --- BOTÓN "ELIMINAR" (Último botón de la celda) --- */
+.admin-table td button:last-child {
+  background-color: rgba(239, 68, 68, 0.1); /* Fondo rojo suave */
+  color: #f87171; /* Texto rojo pastel */
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.admin-table td button:last-child:hover {
+  background-color: #ef4444; /* Rojo sólido en hover */
+  color: #ffffff;
+  border-color: #ef4444;
 }
 
 .admin-tabs {
