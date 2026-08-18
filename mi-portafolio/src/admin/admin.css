@@ -25,6 +25,7 @@
   border-color: #2563eb;
 }
 
+/* --- FORMULARIOS ADMIN (ProjectForm, etc.) --- */
 .admin-form {
   display: flex;
   flex-direction: column;
@@ -105,6 +106,7 @@
   border-color: #ef4444;
 }
 
+/* --- NAVEGACIÓN Y PESTAÑAS (Tabs) --- */
 .admin-tabs {
   display: flex;
   gap: 8px;
@@ -126,6 +128,7 @@
   border-bottom-color: var(--accent);
 }
 
+/* --- LISTA DE MENSAJES --- */
 .messages-list {
   display: flex;
   flex-direction: column;
@@ -145,4 +148,109 @@
 
 .message-item small {
   color: var(--text);
+}
+
+/* ==========================================
+   ESTILOS PARA EL LOGIN ADMIN (NUEVO)
+   ========================================== */
+
+/* Contenedor que centra el cuadro de login en la pantalla */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+/* Tarjeta flotante adaptada al tema oscuro de tu web */
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background-color: rgba(15, 23, 42, 0.6); /* Fondo semitransparente elegante */
+  border: 1px solid var(--border);           /* Usa el mismo borde que tus tablas */
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+/* Título de la vista de Login */
+.login-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+/* Layout del formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: var(--text-h);
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Resaltado del input al hacer foco */
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Mensaje de error de autenticación */
+.login-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Botón "Entrar" con el color azul del botón principal */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
 }
