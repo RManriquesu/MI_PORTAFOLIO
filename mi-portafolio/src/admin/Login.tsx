@@ -36,9 +36,9 @@ export default function Login() {
         
         {/* Cabecera con Badge de Admin */}
         <div className="login-header">
-          <span className="admin-badge">Panel Control</span>
+          <span className="admin-badge">Panel de Control</span>
           <h2 className="login-title">Bienvenido Sr. Admin</h2>
-          <p className="login-subtitle">Ingresa tus credenciales para continuar</p>
+          <p className="login-subtitle">Ingresa sus credenciales para continuar</p>
         </div>
         
         {/* Formulario */}
@@ -51,7 +51,7 @@ export default function Login() {
               <input
                 id="email"
                 type="email"
-                placeholder="tu@email.com"
+                placeholder="----@email.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -104,7 +104,7 @@ export default function Login() {
                 <span className="spinner"></span> Validando...
               </span>
             ) : (
-              'Entrar al Dashboard'
+              'Acceder'
             )}
           </button>
 
