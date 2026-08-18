@@ -20,7 +20,7 @@ export default function Login() {
 
   return (
     <div style={{ maxWidth: '320px', margin: '80px auto' }}>
-      <h2>Login Admin</h2>
+      <h2>Registro del Admin</h2>
       <form onSubmit={handleLogin}>
         <input
           type="email"

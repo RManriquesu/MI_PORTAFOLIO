@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
 import './Contact.css'
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import { Mail } from 'lucide-react'
 
 export default function Contact() {
   const [name, setName] = useState('')
@@ -74,11 +73,8 @@ export default function Contact() {
         <a href="https://www.linkedin.com/in/ronald-wilmer-manrique-supanta-597521426" target="_blank" rel="noreferrer">
           <FaLinkedin size={20} />
         </a>
-        <a href="https://instagram.com/tu_usuario" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/rolitowms?igsh=eTNydXNpazEzaXp2&igsi=eTNydXNpazEzaXp2" target="_blank" rel="noreferrer">
           <FaInstagram size={20} />
-        </a>
-        <a href="mailto:ronaldms376@gmail.com">
-          <Mail size={20} />
         </a>
       </div>
     </section>
